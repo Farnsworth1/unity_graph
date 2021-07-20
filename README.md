@@ -3,7 +3,7 @@ Mathematical 2D graph animation in Unity with time component
 Discretization is done using 3D cubes.
 
 ## Prerequisites
-- Unity 202.3.14f1
+- Unity 2020.3.14f1
 - Rider 2021.1.4
 - Windows Operating System
 
