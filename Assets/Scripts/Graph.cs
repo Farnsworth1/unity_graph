@@ -12,6 +12,7 @@ public class Graph : MonoBehaviour
 
     private void Awake()
     {
+        // initiating points with x in range [-1, 1]
         points = new Transform[resolution];
         float step = 2f / resolution;
         Vector3 position = Vector3.zero;
@@ -31,7 +32,7 @@ public class Graph : MonoBehaviour
         foreach (var p in points)
         {
             Vector3 position = p.position;
-            position.y = Mathf.Sin(Mathf.PI * (position.x + time));
+            position.y = Mathf.Cos(Mathf.PI * (position.x + time));
             p.localPosition = position;
         }
     }
